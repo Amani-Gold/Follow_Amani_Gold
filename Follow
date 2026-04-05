@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فتح الحاسبة</title>
+
+<style>
+body{
+  margin:0;
+  font-family:system-ui;
+  background:#0f172a;
+  color:#fff;
+  text-align:center;
+}
+
+.container{
+  max-width:420px;
+  margin:40px auto;
+  padding:20px;
+}
+
+.card{
+  background:#111827;
+  border-radius:16px;
+  padding:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+h2{
+  margin-bottom:10px;
+}
+
+.note{
+  font-size:13px;
+  opacity:0.8;
+  margin-bottom:15px;
+}
+
+.step{
+  background:#1f2937;
+  padding:12px;
+  margin:10px 0;
+  border-radius:12px;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  margin-top:8px;
+  border:none;
+  border-radius:10px;
+  font-size:14px;
+  cursor:pointer;
+}
+
+.snap{background:#FFFC00;color:#000}
+.insta{background:#E1306C}
+.tiktok{background:#000}
+.confirm{background:#374151}
+
+.done{
+  background:#16a34a !important;
+}
+
+#unlock{
+  display:none;
+  margin-top:15px;
+}
+
+.unlock-btn{
+  display:block;
+  background:#22c55e;
+  color:#fff;
+  padding:14px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.timer{
+  margin-top:10px;
+  opacity:0.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<div class="card">
+
+<h2>افتح الحاسبة مجاناً 🔓</h2>
+
+<div class="note">
+🎁 هذه الحاسبة متوفرة مجاناً لمدة سنة كاملة
+</div>
+
+<p>تابع الحسابات التالية ثم اضغط تم ✔</p>
+
+<!-- SNAP -->
+<div class="step">
+<p>1. تابع سناب</p>
+<button class="snap" onclick="openLink('snap')">فتح سناب</button>
+<button class="confirm" onclick="confirmStep(0,this)">تمت المتابعة ✔</button>
+</div>
+
+<!-- INSTAGRAM -->
+<div class="step">
+<p>2. تابع انستقرام</p>
+<button class="insta" onclick="openLink('insta')">فتح انستقرام</button>
+<button class="confirm" onclick="confirmStep(1,this)">تمت المتابعة ✔</button>
+</div>
+
+<!-- TIKTOK -->
+<div class="step">
+<p>3. تابع تيك توك</p>
+<button class="tiktok" onclick="openLink('tiktok')">فتح تيك توك</button>
+<button class="confirm" onclick="confirmStep(2,this)">تمت المتابعة ✔</button>
+</div>
+
+<div class="timer" id="timer"></div>
+
+<div id="unlock">
+<a class="unlock-btn" href="https://gold-calculator-orpin.vercel.app" target="_blank">
+🚀 فتح الحاسبة الآن
+</a>
+</div>
+
+</div>
+</div>
+
+<script>
+let steps = [false,false,false];
+let started = false;
+
+function openLink(type){
+  if(type === "snap"){
+    window.open("https://www.snapchat.com/add/dramani_photo","_blank");
+  }
+  if(type === "insta"){
+    window.open("https://www.instagram.com/Amani_gold","_blank");
+  }
+  if(type === "tiktok"){
+    window.open("https://www.tiktok.com/@dr.amani92","_blank");
+  }
+}
+
+function confirmStep(i,btn){
+  steps[i] = true;
+  btn.classList.add("done");
+  btn.innerText = "✔ تم";
+
+  if(steps.every(x=>x) && !started){
+    startTimer();
+  }
+}
+
+function startTimer(){
+  started = true;
+  let t = 5;
+  let el = document.getElementById("timer");
+
+  let interval = setInterval(()=>{
+    el.innerText = "جاري فتح الرابط... " + t + " ثواني";
+    t--;
+
+    if(t < 0){
+      clearInterval(interval);
+      el.innerText = "تم فتح الحاسبة ✅";
+      document.getElementById("unlock").style.display = "block";
+    }
+  },1000);
+}
+</script>
+
+</body>
+</html>
