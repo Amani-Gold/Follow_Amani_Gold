@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="ar" dir="rtl"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;فتح الحاسبة&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">body{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin:0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family:system-ui;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:#0f172a;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:#fff;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align:center;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.container{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width:420px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin:40px auto;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:20px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.card{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:#111827;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius:16px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:20px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>box-shadow:0 10px 30px rgba(0,0,0,.4);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">h2{margin-bottom:10px;}</p>
+<p class="p2"><br></p>
+<p class="p1">.note{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:13px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity:0.8;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:15px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.step{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:#1f2937;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:12px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin:10px 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius:12px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">button{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width:100%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:12px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top:8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border:none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius:10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:14px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>cursor:pointer;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.snap{background:#FFFC00;color:#000}</p>
+<p class="p1">.tiktok{background:#000;color:#fff}</p>
+<p class="p1">.confirm{background:#374151;color:#fff}</p>
+<p class="p2"><br></p>
+<p class="p1">.done{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:#16a34a !important;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">#unlock{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top:15px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.unlock-btn{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:block;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:#22c55e;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:#fff;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:14px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius:12px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-decoration:none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:bold;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.timer{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top:10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity:0.8;</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="container"&gt;</p>
+<p class="p1">&lt;div class="card"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;افتح الحاسبة مجاناً 🔓&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="note"&gt;</p>
+<p dir="rtl" class="p1">🎁 هذه الحاسبة متوفرة مجاناً لمدة سنة كاملة</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;تابع الحسابات التالية ثم اضغط تم ✔&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="step"&gt;</p>
+<p class="p1">&lt;p&gt;1. تابع سناب&lt;/p&gt;</p>
+<p class="p1">&lt;button class="snap" onclick="openLink('snap')"&gt;فتح سناب&lt;/button&gt;</p>
+<p class="p1">&lt;button class="confirm" onclick="confirmStep(0,this)"&gt;تمت المتابعة ✔&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="step"&gt;</p>
+<p class="p1">&lt;p&gt;2. تابع تيك توك&lt;/p&gt;</p>
+<p class="p1">&lt;button class="tiktok" onclick="openLink('tiktok')"&gt;فتح تيك توك&lt;/button&gt;</p>
+<p class="p1">&lt;button class="confirm" onclick="confirmStep(1,this)"&gt;تمت المتابعة ✔&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="timer" id="timer"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="unlock"&gt;</p>
+<p class="p1">&lt;a class="unlock-btn" href="https://gold-calculator-orpin.vercel.app" target="_blank"&gt;</p>
+<p dir="rtl" class="p1">🚀 فتح الحاسبة الآن</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">let steps = [false,false];</p>
+<p class="p1">let started = false;</p>
+<p class="p2"><br></p>
+<p class="p1">function openLink(type){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(type === "snap"){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>window.open("https://www.snapchat.com/add/dramani_photo","_blank");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(type === "tiktok"){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>window.open("https://www.tiktok.com/@dr.amani92","_blank");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function confirmStep(i,btn){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>steps[i] = true;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>btn.classList.add("done");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>btn.innerText = "✔ تم";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(steps.every(x=&gt;x) &amp;&amp; !started){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>startTimer();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function startTimer(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>started = true;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let t = 5;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let el = document.getElementById("timer");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>let interval = setInterval(()=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>el.innerText = "جاري فتح الرابط... " + t + " ثواني";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>t--;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(t &lt; 0){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>clearInterval(interval);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>el.innerText = "تم فتح الحاسبة ✅";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById("unlock").style.display = "block";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>},1000);</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
